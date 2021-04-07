@@ -9,7 +9,7 @@ import pl.miernik.view.BookService;
 
 import java.util.List;
 
-// @RestController to to samo co @ResponseBody użyte nad każdą akcja
+
 @RestController
 @RequestMapping("/books")
 public class BookController {
@@ -18,12 +18,6 @@ public class BookController {
     @Autowired
     public BookController(BookService bookService) {
         this.bookService = bookService;
-    }
-
-    @RequestMapping("/helloBook")
-    public Book helloBook() {
-        return new Book(1L, "9788324631766", "Thinking in Java",
-                "Bruce Eckel", "Helion", "programming");
     }
 
     @GetMapping("")

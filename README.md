@@ -1,4 +1,4 @@
-# BookAPI - Spring
+# BookApi
 
 
 Technologies utilized:

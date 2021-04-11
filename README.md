@@ -122,5 +122,5 @@ Body (JSON):
 }]
 ````
 Display deleted book per id: [server:port]/books/{id}  
+Exempli gratia: http://localhost:8080/books/4<br>
 There will be no result if deletion was completed.
-Exempli gratia: http://localhost:8080/books/4

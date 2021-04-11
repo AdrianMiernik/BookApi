@@ -1,5 +1,4 @@
 # BookApi
->Application pretend communication between client and server via  the REST API.
 
 ## Table of elements
 * [Description](#description)
@@ -7,7 +6,7 @@
 * [App Testing](#app-testing)
 
 ## Description
->Appication contains backend functionality to add, display, update, delete books  using REST method. 
+>Application pretend communication between client and server via the REST API.
 
 ## Technogy Stack
 * Java
@@ -21,7 +20,7 @@
 ## Application Testing
 
 ### Display list of objects: method „GET” [server:port]/books  
-Exempli gratia: http://localhost:8080/books
+Exempli gratia: http://localhost:8080/books<br>
 Returns list of all books.
 
 JSON:
@@ -67,8 +66,8 @@ JSON:
 ### Add object: method „POST” [server:port]/books/{id}  
 
 POSTMAN can be used to pass an object to database in JSON format:
-POST http://localhost:8080/books
-Headers: Key=”Content-Type” , Value=”application/json”
+POST http://localhost:8080/books<br>
+Headers: Key=”Content-Type”<br> Value=”application/json”
 Body (JSON):
 ````json
 [{
@@ -80,16 +79,16 @@ Body (JSON):
 	"type": "programming"
 }]
 ````
-Succesfull request will receive response: status 200.
-Newly added book can be also displayed on the [server:port]/books/{id}  
+Succesfull request get response: 'status 200'.
+Added book can be displayed on the: [server:port]/books/{id}  
 Exempli gratia: http://localhost:8080/books/4
 
 
 ### Update object: method „PUT” [server:port]/books/{id}  
 
 POSTMAN can be used to pass updated object to database in JSON format:
-PUT http://localhost:8080/books/{id}
-Headers: Key=”Content-Type” , Value=”application/json”
+PUT http://localhost:8080/books/{id}<br>
+Headers: Key=”Content-Type”<br> Value=”application/json”
 Body (JSON):
 ````json
 [{
@@ -108,8 +107,8 @@ Exempli gratia: http://localhost:8080/books/3
 ### Delete object: method „DELETE” [server:port]/books/{id}  
 
 Use POSTMAN to pass deletion request in JSON format:
-DELETE http://localhost:8080/books/{id}
-Headers: Key=”Content-Type” , Value=”application/json”
+DELETE http://localhost:8080/books/{id}<br>
+Headers: Key=”Content-Type”<br> Value=”application/json”
 Body (JSON):
 ````json
 [{
@@ -123,4 +122,4 @@ Body (JSON):
 ````
 Display deleted book per id: [server:port]/books/{id}  
 Exempli gratia: http://localhost:8080/books/4
-There will be no result if deletion was completed properly.
+There will be no result if deletion was completed.

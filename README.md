@@ -1,4 +1,5 @@
 # BookApi
+>REST
 
 ## Table of elements
 * [Description](#description)

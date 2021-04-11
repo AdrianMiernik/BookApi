@@ -50,7 +50,7 @@ JSON:
 }]
 ````
 ### Display object per id: method „GET” [server:port]/books/{id}  
-Exempli gratia: http://localhost:8080/books/2
+Exempli gratia: http://localhost:8080/books/2<br>
 Returns chosen book.
 
 JSON:

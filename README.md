@@ -15,7 +15,7 @@
 * Jackson
 * Dependency injection
 * Tomcat
-* Postman (test)
+* Postman (testing)
 
 
 ## Application Testing

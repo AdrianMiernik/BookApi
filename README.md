@@ -72,7 +72,6 @@ Headers: Key=”Content-Type”<br> Value=”application/json”
 Body (JSON):
 ````json
 [{
-	"id": 4,
 	"isbn": "9788328331303",
 	"title": "The Pragmatic Programmer",
 	"author": "Andrew Hunt, David Thomas",
@@ -81,9 +80,9 @@ Body (JSON):
 }]
 ````
 Succesfull request get response: 'status 200'.
-Added book can be displayed on the: [server:port]/books/{id}  
-Exempli gratia: http://localhost:8080/books/4
-
+Added book can be displayed on the: [server:port]/books/ 
+Exempli gratia: http://localhost:8080/books/
+REMEMBER TO CREATE NO ARGUMENTS CONCTRUCTOR!!
 
 ### Update object: method „PUT” [server:port]/books/{id}  
 
